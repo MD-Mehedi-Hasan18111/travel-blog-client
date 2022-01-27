@@ -34,7 +34,7 @@ const AddBlog = () => {
     data.time = time;
     data.email = user.email;
 
-    fetch("http://localhost:5000/addBlog", {
+    fetch("https://travel-agency-me.herokuapp.com/addBlog", {
       method: "POST",
       headers: {
         "content-type": "application/json",
