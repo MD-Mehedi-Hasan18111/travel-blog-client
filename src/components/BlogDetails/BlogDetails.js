@@ -97,7 +97,7 @@ const BlogDetails = () => {
               <div className="my-4">
                 <h6 style={{color: "#2C3E50", fontWeight: "700", margin: "0"}}>{comment?.commentAuthor}</h6>
                 <p className="m-0">{comment?.comment}</p>
-                <p onClick={() => handleDeleteComment(comment._id)} className="m-0" style={{cursor: "pointer", color: "#0B5ED7"}}>Delete Comment</p>
+                {blog.email == user.email ? <p onClick={() => handleDeleteComment(comment._id)} className="m-0" style={{cursor: "pointer", color: "#0B5ED7"}}>Delete Comment</p>: ""}
               </div>
             ))}
           </div>
