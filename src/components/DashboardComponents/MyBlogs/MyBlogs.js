@@ -57,7 +57,6 @@ const MyOrders = () => {
           <thead>
             <tr>
               <th>Title</th>
-              <th>Author</th>
               <th>Location</th>
               <th>Category</th>
               <th>Date</th>
@@ -69,7 +68,6 @@ const MyOrders = () => {
               <>
                 <tr>
                   <td>{blog?.title}</td>
-                  <td>{blog?.name}</td>
                   <td>{blog?.location}</td>
                   <td>{blog?.category}</td>
                   <td>{blog?.date}</td>

@@ -13,13 +13,10 @@ const BlogCard = ({ blog }) => {
           <img src={image} alt="" />
         </Col>
         <Col xs={12} md={12} lg={6} className="ms-0">
-          <h5>{title}</h5>
-          <h6 className="text-muted">
-          {date}, {time} UTC +0:06
-          </h6>
-          <h6>Category: {category}</h6>
-          <Link to={`/blogs/${_id}`}>
-          <button className="signin authBtn">Read More</button>
+          <h6 style={{color: "#2C3E50"}}>{title}</h6>
+          <p>Category: {category}</p>
+          <Link to={`/blogs/${_id}`} style={{textDecoration: "none"}}>
+          <button className="signin authBtn">Read</button>
           </Link>
         </Col>
       </Row>

@@ -44,8 +44,8 @@ const AddBlog = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
-            swal("Blog Added Successfully", "", "success");
-            e.target.reset();
+          swal("Blog Added Successfully", "", "success");
+          e.target.reset();
         }
       });
   };
@@ -142,8 +142,9 @@ const AddBlog = () => {
               </label>
               <input
                 className="form-control my-2"
-                type="number"
+                type="text"
                 id="rating"
+                placeholder="You should given rating 1 to 5..."
                 {...register("rating")}
                 required
               />
